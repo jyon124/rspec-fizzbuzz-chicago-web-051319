@@ -1,11 +1,11 @@
 # Don't forget! This file needs to be 'required' in its spec file
 # See README.md for instructions on how to do this
-def fizzbuzz(phrase)
-  if (phrase == 3)
+def fizzbuzz(int)
+  if (int % 3 == 0)
     return "Fizz"
-  elsif (phrase == 5)
+  elsif (int % 5 == 0)
     return "Buzz"
-  elsif (phrase == 3 && phrase == 5)
+  elsif (int % 3 == 0 && int % 5 == 0)
     return "FizzBuzz"
   else
     return "nil"
